@@ -46,6 +46,5 @@ public class ArrayListLearning {
         //4. Check size, isEmpty
         System.out.println("Is myNumList empty: " + myNumList.isEmpty());
         System.out.println("Is myStringList empty: " + myStringList.isEmpty());
-
     }
 }
