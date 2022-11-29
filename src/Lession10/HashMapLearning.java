@@ -3,10 +3,11 @@ package Lession10;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
+import Lession10.Student;
 
 public class HashMapLearning {
-
     public static void main(String[] args) {
         //1. Declare Hashmap
         Map<Integer, String> myStudentList = new HashMap<>();
@@ -45,6 +46,29 @@ public class HashMapLearning {
             System.out.println(v.toString());
         }
 
+        //Hashmap(key, Hashmap)
+        Map<Integer, Student> complexStudentList = new HashMap<>();
+
+        complexStudentList.put(01, new Student("Nguyen A", "add A"));
+        complexStudentList.put(02, new Student("Nguyen B", "add B"));
+
+        //out
+        System.out.println(complexStudentList.get(01).getName());
+        System.out.println(complexStudentList.get(01).getAddress());
+
+        //use for-each
+        for(Entry<Integer, Student> entry : complexStudentList.entrySet()){
+            Integer key = entry.getKey();
+            Student student = entry.getValue();
+
+            System.out.printf("%d - %s - %s%n", key, student.getName(), student.getAddress());
+        }
+        System.out.println("============");
+
+        //use lambda
+        complexStudentList.forEach((key, value) -> {
+            System.out.printf("%d - %s - %s%n", key, value.getName(), value.getAddress());
+        });
 
     }
 }
