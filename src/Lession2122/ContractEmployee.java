@@ -1,4 +1,4 @@
-package Lession21;
+package Lession2122;
 
 public class ContractEmployee extends EmployeeAbstract{
     private final double CE_RATE = 0.5;
@@ -7,5 +7,6 @@ public class ContractEmployee extends EmployeeAbstract{
     public double CaculateWeeklySalary() {
         return this.salary * CE_RATE * 10;
     }
+
 }
 

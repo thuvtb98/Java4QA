@@ -1,4 +1,4 @@
-package Lession21;
+package Lession2122;
 
 public abstract class EmployeeAbstract {
     protected int id;
