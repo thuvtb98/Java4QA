@@ -1,4 +1,4 @@
-package Lession2122;
+package Lession21;
 
 public abstract class CompanyAbstract {
     protected String name;

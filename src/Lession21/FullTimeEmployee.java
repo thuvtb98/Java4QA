@@ -1,4 +1,4 @@
-package Lession2122;
+package Lession21;
 
 public class FullTimeEmployee extends EmployeeAbstract implements Insurance_Interface, Bonus_Interface{
     private double FTE_RATE = 1.0;
