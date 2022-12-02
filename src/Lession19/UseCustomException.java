@@ -1,6 +1,5 @@
 package Lession19;
 
-
 public class UseCustomException {
   private int num1;
   private int num2;
@@ -43,3 +42,4 @@ public class UseCustomException {
     }
   }
 }
+
